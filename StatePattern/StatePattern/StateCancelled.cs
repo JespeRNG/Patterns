@@ -4,12 +4,12 @@ using System.Text;
 
 namespace StatePattern
 {
-    class StateCancelled : State
+    public class StateCancelled : State
     {
         public override void Raise1() { }
 
         public override void Raise2() { }
 
-        public override void Raise3(string nextState) { }
+        public override void Raise3(states st) { }
     }
 }

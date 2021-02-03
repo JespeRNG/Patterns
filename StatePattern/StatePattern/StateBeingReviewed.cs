@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StatePattern
 {
-    class StateBeingReviewed : State
+    public class StateBeingReviewed : State
     {
         public override void Raise1() { }
 
@@ -14,19 +14,20 @@ namespace StatePattern
             this.grant.TransitionTo(new StatePostponed());
         }
 
-        public override void Raise3(string nextState)
+        public override void Raise3(states st)
         {
-            switch (nextState)
+            int i = (int)st; 
+            switch (i)
             {
-                case "Cancelled":
+                case 0:
                     Console.WriteLine("Changing to StateCancelled.\n");
                     this.grant.TransitionTo(new StateCancelled());
                     break;
-                case "Accepted":
+                case 1:
                     Console.WriteLine("Changing to StateAccepted.\n");
                     this.grant.TransitionTo(new StateAccepted());
                     break;
-                case "Revoked":
+                case 2:
                     Console.WriteLine("Changing to StateRevoked.\n");
                     this.grant.TransitionTo(new StateRevoked());
                     break;

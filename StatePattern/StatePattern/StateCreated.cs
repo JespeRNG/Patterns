@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StatePattern
 {
-    class StateCreated : State
+    public class StateCreated : State
     {
         public override void Raise1()
         {
@@ -14,6 +14,6 @@ namespace StatePattern
 
         public override void Raise2() { }
 
-        public override void Raise3(string nextState) { }
+        public override void Raise3(states st) { }
     }
 }

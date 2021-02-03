@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StatePattern
 {
-    class StatePostponed : State
+    public class StatePostponed : State
     {
         public override void Raise1() { }
 
@@ -14,6 +14,6 @@ namespace StatePattern
             this.grant.TransitionTo(new StateBeingReviewed());
         }
 
-        public override void Raise3(string nextState) { }
+        public override void Raise3(states st) { }
     }
 }

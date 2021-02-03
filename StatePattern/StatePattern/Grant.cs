@@ -4,10 +4,9 @@ using System.Text;
 
 namespace StatePattern
 {
-    class Grant
+    public class Grant
     {
         private State _state = null;
-
         public Grant(State state)
         {
             this.TransitionTo(state);
@@ -27,10 +26,10 @@ namespace StatePattern
 
         public void RaiseRequest2() => this._state.Raise2();
 
-        public void RaiseRequest3(string nextState)
+        public void RaiseRequest3(states st)
         {
-            string state = nextState;
-            this._state.Raise3(state);
+
+            this._state.Raise3(st);
         }
     }
 }

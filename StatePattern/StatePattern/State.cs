@@ -4,7 +4,13 @@ using System.Text;
 
 namespace StatePattern
 {
-    abstract class State
+    public enum states
+    {
+        Cancelled,
+        Accepted,
+        Revoked
+    }
+    public abstract class State
     {
         public Grant grant { private set; get; }
 
@@ -14,6 +20,6 @@ namespace StatePattern
 
         public abstract void Raise2();
 
-        public abstract void Raise3(string nextState);
+        public abstract void Raise3(states st);
     }
 }
