@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StatePattern
 {
-    public enum states
+    public enum endingStates
     {
         Cancelled,
         Accepted,

@@ -14,6 +14,6 @@ namespace StatePattern
             this.grant.TransitionTo(new StateBeingReviewed());
         }
 
-        public override void Raise3(states st) { }
+        public override void Raise3(endingStates st) { }
     }
 }

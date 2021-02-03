@@ -31,15 +31,15 @@ namespace StatePattern
                         break;
                     case "2":
                         grant.CurrState();
-                        grant.RaiseRequest3(states.Cancelled);
+                        grant.RaiseRequest3(endingStates.Cancelled);
                         break;
                     case "3":
                         grant.CurrState();
-                        grant.RaiseRequest3(states.Accepted);
+                        grant.RaiseRequest3(endingStates.Accepted);
                         break;
                     case "4":
                         grant.CurrState();
-                        grant.RaiseRequest3(states.Revoked);
+                        grant.RaiseRequest3(endingStates.Revoked);
                         break;
                     default:
                         break;

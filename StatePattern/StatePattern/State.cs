@@ -14,6 +14,6 @@ namespace StatePattern
 
         public abstract void Raise2();
 
-        public abstract void Raise3(states st);
+        public abstract void Raise3(endingStates st);
     }
 }

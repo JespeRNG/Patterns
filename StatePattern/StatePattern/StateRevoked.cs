@@ -10,6 +10,6 @@ namespace StatePattern
 
         public override void Raise2() { }
 
-        public override void Raise3(states st) { }
+        public override void Raise3(endingStates st) { }
     }
 }

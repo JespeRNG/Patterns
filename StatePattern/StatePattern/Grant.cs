@@ -26,10 +26,6 @@ namespace StatePattern
 
         public void RaiseRequest2() => this._state.Raise2();
 
-        public void RaiseRequest3(states st)
-        {
-
-            this._state.Raise3(st);
-        }
+        public void RaiseRequest3(endingStates st) => this._state.Raise3(st);
     }
 }

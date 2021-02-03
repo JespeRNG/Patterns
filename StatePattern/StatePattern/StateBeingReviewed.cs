@@ -14,7 +14,7 @@ namespace StatePattern
             this.grant.TransitionTo(new StatePostponed());
         }
 
-        public override void Raise3(states st)
+        public override void Raise3(endingStates st)
         {
             int i = (int)st; 
             switch (i)
