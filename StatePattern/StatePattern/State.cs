@@ -4,12 +4,6 @@ using System.Text;
 
 namespace StatePattern
 {
-    public enum states
-    {
-        Cancelled,
-        Accepted,
-        Revoked
-    }
     public abstract class State
     {
         public Grant grant { private set; get; }

@@ -6,8 +6,6 @@ namespace StatePattern
     {
         static void Main(string[] args)
         {
-            states st;
-
             var grant = new Grant(new StateCreated());
             string choice;
 
@@ -33,15 +31,15 @@ namespace StatePattern
                         break;
                     case "2":
                         grant.CurrState();
-                        grant.RaiseRequest3(StatePattern.states.Cancelled);
+                        grant.RaiseRequest3(states.Cancelled);
                         break;
                     case "3":
                         grant.CurrState();
-                        grant.RaiseRequest3(StatePattern.states.Accepted);
+                        grant.RaiseRequest3(states.Accepted);
                         break;
                     case "4":
                         grant.CurrState();
-                        grant.RaiseRequest3(StatePattern.states.Revoked);
+                        grant.RaiseRequest3(states.Revoked);
                         break;
                     default:
                         break;
