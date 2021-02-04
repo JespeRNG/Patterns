@@ -36,7 +36,7 @@ namespace ObserverPattern
             return (new Random().Next(1, 11) <= 5) ? "politics" : "sports"; 
         }
 
-        public void SomeBusinessLogic()
+        public void supplyOfNewspapers()
         {
             Console.WriteLine("\nPostal Office: Getting newspapers.");
             this.newspaperType = setNewspaperType();

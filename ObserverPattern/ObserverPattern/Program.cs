@@ -16,22 +16,22 @@ namespace ObserverPattern
             postalOffice.Subscribe(clientA);
             postalOffice.Subscribe(clientB);
 
-            postalOffice.SomeBusinessLogic();
+            postalOffice.supplyOfNewspapers();
             Thread.Sleep(1000);
-            postalOffice.SomeBusinessLogic();
+            postalOffice.supplyOfNewspapers();
             Thread.Sleep(1000);
-            postalOffice.SomeBusinessLogic();
+            postalOffice.supplyOfNewspapers();
             Thread.Sleep(1000);
-            postalOffice.SomeBusinessLogic();
+            postalOffice.supplyOfNewspapers();
             Thread.Sleep(1000);
-            postalOffice.SomeBusinessLogic();
+            postalOffice.supplyOfNewspapers();
             Thread.Sleep(1000);
 
             Console.WriteLine();
             postalOffice.Unsubscribe(clientB);
             postalOffice.Unsubscribe(clientA);
 
-            postalOffice.SomeBusinessLogic();
+            postalOffice.supplyOfNewspapers();
         }
     }
 }
