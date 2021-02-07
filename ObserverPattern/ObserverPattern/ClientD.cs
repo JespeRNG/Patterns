@@ -4,12 +4,12 @@ using System.Text;
 
 namespace ObserverPattern
 {
-    class ClientA : IClient
+    class ClientD : IClient
     {
         newsTypes prefferedType;
         public void Update(Newspaper newspaper)
         {
-            Console.WriteLine($"ClientA: Reacted to the event and took {newspaper.getAuthor()}'s " +
+            Console.WriteLine($"ClientD: Reacted to the event and took {newspaper.getAuthor()}'s " +
                 $"{newspaper.getType()} ({newspaper.getPublishYear()}) newspaper.");
         }
         public void setPrefferedType(newsTypes type) => prefferedType = type;

@@ -6,10 +6,16 @@ namespace ObserverPattern
 {
     class ClientB : IClient
     {
-        public void Update(IPostalOffice office)
+        newsTypes prefferedType;
+        public void Update(Newspaper newspaper)
         {
-            if ((office as PostalOffice).newspaperType == "sports")
-                Console.WriteLine("ClientB: Reacted to the event.");
+            Console.WriteLine($"ClientB: Reacted to the event and took {newspaper.getAuthor()}'s " +
+                $"{newspaper.getType()} ({newspaper.getPublishYear()}) newspaper.");
+        }
+        public void setPrefferedType(newsTypes type) => prefferedType = type;
+        public newsTypes getPrefferedType()
+        {
+            return prefferedType;
         }
     }
 }

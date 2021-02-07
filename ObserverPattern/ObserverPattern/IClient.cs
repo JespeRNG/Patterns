@@ -6,6 +6,8 @@ namespace ObserverPattern
 {
     public interface IClient
     {
-        void Update(IPostalOffice office);
+        void Update(Newspaper newspaper);
+        public void setPrefferedType(newsTypes type);
+        public newsTypes getPrefferedType();
     }
 }

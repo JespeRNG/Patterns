@@ -7,7 +7,7 @@ namespace ObserverPattern
 {
     public class PostalOffice : IPostalOffice
     {
-        public string newspaperType { get; set; }
+        private Newspaper newspaper = new Newspaper();
 
         private List<IClient> _clients = new List<IClient>();
 
@@ -28,20 +28,21 @@ namespace ObserverPattern
             Console.WriteLine("Postal Office: Notifying clients...");
 
             foreach (IClient client in _clients)
-                client.Update(this);
+            {
+                if(client.getPrefferedType() == newspaper.getType())
+                    client.Update(newspaper);
+            }
         }
 
-        private string setNewspaperType() 
-        { 
-            return (new Random().Next(1, 11) <= 5) ? "politics" : "sports"; 
-        }
-
-        public void supplyOfNewspapers()
+        public void supplyOfNewspapers(newsTypes type)
         {
             Console.WriteLine("\nPostal Office: Getting newspapers.");
-            this.newspaperType = setNewspaperType();
 
-            Console.WriteLine("Postal Office: Got " + newspaperType + " newspaper type.");
+            newspaper.setType(type);
+            newspaper.setAuthor();
+            newspaper.setPublishYear();
+
+            Console.WriteLine("Postal Office: Got " + newspaper.getType() + " newspaper type.");
             this.Send();
         }
     }
