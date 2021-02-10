@@ -4,11 +4,11 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    class panelHouseBuilder : Creator
+    class PanelHouseBuilder : Creator
     {
-        public override IProduct FactoryMethod()
+        public override IBuilding FactoryMethod()
         {
-            return new panelHouse();
+            return new PanelHouse();
         }
     }
 }

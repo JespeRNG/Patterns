@@ -6,13 +6,13 @@ namespace FactoryPattern
 {
     abstract class Creator
     {
-        public abstract IProduct FactoryMethod();
+        public abstract IBuilding FactoryMethod();
 
         public string BuildingOperation()
         {
             var product = FactoryMethod();
             var result = "Creator: The same creator's code has just worked with " 
-                + product.build();
+                + product.Build();
 
             return result;
         }

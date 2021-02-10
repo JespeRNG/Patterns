@@ -4,9 +4,9 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    class panelHouse : IProduct
+    class PanelHouse : IBuilding
     {
-        public string build()
+        public string Build()
         {
             return "{Result: panel house was built}";
         }

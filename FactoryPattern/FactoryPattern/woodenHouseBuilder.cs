@@ -4,11 +4,11 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    class woodenHouseBuilder : Creator
+    class WoodenHouseBuilder : Creator
     {
-        public override IProduct FactoryMethod()
+        public override IBuilding FactoryMethod()
         {
-            return new woodenHouse();
+            return new WoodenHouse();
         }
     }
 }

@@ -9,12 +9,12 @@ namespace FactoryPattern
         public void Main()
         {
             Console.WriteLine("Program: calling panel house builder to build panel house");
-            ClientCode(new panelHouseBuilder());
+            ClientCode(new PanelHouseBuilder());
                       
             Console.WriteLine("");
                                                  
             Console.WriteLine("Program: calling wooden house builder to bouild wooden house.");
-            ClientCode(new woodenHouseBuilder());
+            ClientCode(new WoodenHouseBuilder());
         }                                        
 
         public void ClientCode(Creator creator)

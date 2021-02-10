@@ -4,8 +4,8 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    public interface IProduct
+    public interface IBuilding
     {
-        string build();
+        string Build();
     }
 }

@@ -4,9 +4,9 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    class woodenHouse : IProduct
+    class WoodenHouse : IBuilding
     {
-        public string build()
+        public string Build()
         {
             return "{Result: wooden house was built}";
         }
