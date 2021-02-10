@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    class WoodenHouse : IBuilding
+    public class WoodenHouse : IBuilding
     {
         public string Build()
         {

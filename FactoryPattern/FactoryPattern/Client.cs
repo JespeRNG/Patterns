@@ -4,18 +4,18 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    class Client
+    public class Client
     {
         public void Main()
         {
             Console.WriteLine("Program: calling panel house builder to build panel house");
             ClientCode(new PanelHouseBuilder());
-                      
+
             Console.WriteLine("");
-                                                 
+
             Console.WriteLine("Program: calling wooden house builder to bouild wooden house.");
             ClientCode(new WoodenHouseBuilder());
-        }                                        
+        }
 
         public void ClientCode(Creator creator)
         {

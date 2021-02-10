@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    class WoodenHouseBuilder : Creator
+    public class WoodenHouseBuilder : Creator
     {
         public override IBuilding FactoryMethod()
         {

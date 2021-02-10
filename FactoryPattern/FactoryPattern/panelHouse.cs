@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    class PanelHouse : IBuilding
+    public class PanelHouse : IBuilding
     {
         public string Build()
         {

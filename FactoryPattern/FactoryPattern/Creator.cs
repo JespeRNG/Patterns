@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    abstract class Creator
+    public abstract class Creator
     {
         public abstract IBuilding FactoryMethod();
 
